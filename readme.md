@@ -4,8 +4,8 @@ JWT Invalidation uses \"jsonwebtoken\" and \"redis\" to provide a way to handle
 multi token/user/client jwt invalidation.
 
 This library takes [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken),
-and [redis]((https://www.npmjs.com/package/redis) in order to provide a method
-to be used for blocklisting previously issued tokens.
+and ]redis](https://www.npmjs.com/package/redis) in order to provide a method to
+be used for blocklisting previously issued tokens.
 
 There are some scenarios where you need to revoke users' sessions, in this
 [answer](https://stackoverflow.com/a/36884683/7200626) you can see some of them:
@@ -36,7 +36,7 @@ This makes it possible to invalidate all previously signed tokens for a given
 user (who just logged out for example), or signout a user from a given client
 (mobile for example).
 
-[redis]((https://www.npmjs.com/package/redis) is used to keep the state of the
+]redis](https://www.npmjs.com/package/redis) is used to keep the state of the
 invalidations and is up to you how you want to configure your redis server,
 choosing wheather you want to persist the data, how you want to persist and
 where you want to keep your server running. The only thing you have to do is to
@@ -45,7 +45,7 @@ give jwti a redis client already connected, so it can keep its state.
 # (Peer)Dependencies
 
 - [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
-- [redis]((https://www.npmjs.com/package/redis)
+- ]redis](https://www.npmjs.com/package/redis)
 
 # Installation
 
