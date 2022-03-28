@@ -1,6 +1,6 @@
 {
   "name": "jwti",
-  "version": "0.1.0-beta.0",
+  "version": "0.1.0-beta.1",
   "description": "JWT Invalidation uses \"jsonwebtoken\" and \"redis\" to provide a way to handle multi token/user/client jwt invalidation",
   "main": "index.js",
   "files": [
