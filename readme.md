@@ -123,7 +123,9 @@ const reverted = await jwti.revert({ user: 1, client: 'mobile' });
 await jwti.verify(token);
 ```
 
-# Quick reminder: all new tokens (signed after an invalidation) will be valid
+# Quick reminder:
+
+**all new tokens (signed after an invalidation) will be valid**
 
 ```typescript
 const firstToken = await jwti.sign('payload', 'secret', { user: 1 });
@@ -139,7 +141,11 @@ console.log(await jwti.verify(firstToken));
 console.log(await jwti.verify(secondToken));
 ```
 
-# Important: Whenever possible, use precise flag (check full documentation for details in [Github](https://github.com/MarcoASilva/jwti))
+# Important:
+
+<!-- prettier-ignore-start -->
+**Whenever possible, use `precise` flag (check full [documentation](https://github.com/MarcoASilva/jwti/blob/feature-first-code-version/docs.md) for details)**
+<!-- prettier-ignore-end -->
 
 Short explanation: `jwti` uses
 [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) under the hood and
@@ -150,8 +156,8 @@ E.g: `1648507842001` becomes `1648507842` hence `1648507842000`; `1648507842999`
 also becomes `1648507842` hence `1648507842000`
 
 jwti invalidations are precise, and take milleseconds into account. If an
-invalidation was set on the same second of a token issuation, that token would
-be valid altought it was signed before the invalidation.
+invalidation was set on the **SAME SECOND** of a token issuation, that token
+would be valid altought it was signed before the invalidation.
 
 E.g:
 
