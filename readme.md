@@ -1,6 +1,7 @@
 # jwti
 
-JWT Invalidation uses \"jsonwebtoken\" and \"redis\" to provide a way to handle
+JWT Invalidation uses [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken)
+and [redis](https://www.npmjs.com/package/redis) to provide a way to handle
 multi token/user/client jwt invalidation.
 
 # Setup
