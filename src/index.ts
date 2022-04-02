@@ -8,8 +8,6 @@ import {
 import { InvalidatedTokenError } from './errors';
 import { JwtiAPI, JwtiParams } from './interfaces';
 
-console.log(123);
-
 export class Jwti implements JwtiAPI {
   constructor(
     public jwt: typeof Jwt,
