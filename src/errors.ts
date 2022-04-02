@@ -1,7 +1,7 @@
 type InvalidationType = 'token' | 'user-client' | 'user' | 'client';
 
 export class JwtiError extends Error {
-  isJwtiError: boolean = true;
+  isJwtiError = true;
 }
 
 export class InvalidatedTokenError extends JwtiError {
