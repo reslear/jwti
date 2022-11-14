@@ -7,14 +7,14 @@ import {
 } from 'redis';
 import { InvalidatedTokenError } from './errors';
 import { JwtiAPI, JwtiParams } from './interfaces';
+import type { Redis } from 'ioredis';
 
 export class Jwti implements JwtiAPI {
   constructor(
     public jwt: typeof Jwt,
-    private redis: RedisClientType<
-      RedisDefaultModules & RedisModules,
-      RedisScripts
-    >,
+    private redis:
+      | RedisClientType<RedisDefaultModules & RedisModules, RedisScripts>
+      | Redis,
   ) {}
 
   private async createTokenInvalidation(token: string): Promise<void> {
