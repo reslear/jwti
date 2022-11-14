@@ -1,5 +1,5 @@
 {
-  "name": "jwti",
+  "name": "@reslear/jwti",
   "version": "1.0.2",
   "description": "JWT Invalidation uses \"jsonwebtoken\" and \"redis\" to provide a way to handle multi token/user/client jwt invalidation",
   "author": "Marco Silva <marco.up.bsi@gmail.com> (https://github.com/MarcoASilva)",
