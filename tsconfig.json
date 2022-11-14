@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "es2017",
     "lib": ["es2017"],
-    "module": "es2022",
     "moduleResolution": "node",
+    "module": "commonjs",
     "outDir": "build",
     "strict": true,
     "sourceMap": true,
